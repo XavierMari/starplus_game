@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="star_plus_game"
+        android:label="starplus_game"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -20,18 +20,6 @@
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               />
-
-            <!-- Intent filter to handle deep linking -->
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                
-                <!-- Replace "myapp" with your custom scheme and "game" with your host -->
-                <data android:scheme="starapp" android:host="game" />
-            </intent-filter>
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
